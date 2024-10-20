@@ -11,47 +11,315 @@ FACEBOOK: https: //www.facebook.com/themefisher
 
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-color: #223a66;
+    --secondery-color: #6f8ba4;
+    --white-color: #ffff;
+    --gray-color: #333;
+    --red-color: #e12454;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #333;
+    color: var(--gray-color);
     font-family: "Exo", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Exo", sans-serif;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+
+}
+/* Preloader style */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    z-index: 9999;
+    /* Make sure it's on top of everything else */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-top-area{
-    background-color: var(--primary-color);
+/* Spinner animation */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide preloader when the page is loaded */
+body.loaded #preloader {
+    display: none;
+}
+/* Scroll Bar  */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+    /* Initially hidden */
+    cursor: pointer;
+    z-index: 1000;
+    /* Make sure it's on top */
+}
+
+#scrollToTop:hover {
+    background-color: var(--red-color);
+}
+/* 
+/* Header area  */
+.header-top-area {
+    background-color: var(--primary-color);
+} 
 
 
 .header-top-area li {
     font-size: 14px;
-  }
-  .header-top-area p {
+}
+
+.header-top-area p {
     font-size: 16px;
-  }
-  .header-top-area p span {
+}
+
+.header-top-area p span {
     font-size: 20px;
-  }
+}
+
+/* Banner area  */
+
+.banner-area {
+    background: url("../img/slider-bg-1.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 550px;
+}
+
+.divider {
+    width: 40px;
+    background: var(--red-color);
+    height: 5px;
+}
+
+.banner-content {
+    padding: 80px 0px 160px;
+}
+
+.banner-content span {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondery-color);
+    letter-spacing: 2px;
+    font-family: revert;
+    font-weight: 400;
+}
+
+.banner-content h4 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.banner-content p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--secondery-color);
+}
+
+
+
+.appoinment-btn .btn {
+    display: inline-block;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 15px 25px;
+    border: none;
+    background: var(--red-color);
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+.appoinment-icon {
+    margin-left: 20px;
+    border-left: 1px solid var(--secondery-color);
+    padding: 0 20px;
+}
+.appoinment-btn .btn:hover {
+    background: var(--primary-color);
+    transition: .3s;
+}
+
+/* Features  */
+.features {
+    margin-top: -70px;
+    
+}
+
+.feature-item {
+    /* margin: 0px 10px; */
+    padding: 40px 30px;
+    background-color: var(--white-color);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+
+}
+
+.feature-span {
+    color: var(--secondery-color);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.feature-heading {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.feature-para {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--secondery-color);
+}
+
+.feature-btn .btn {
+    display: inline-block;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    background: var(--primary-color);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.feature-btn .btn:hover {
+    background: var(--red-color);
+    transform: .3s;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.w-hours li {
+    color: var(--secondery-color);
+    padding: 12px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* About Area  */
+.about-img img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+.about-heading {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.about-para {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--secondery-color);
+}
+
+/* Counter Area  */
+.counters{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.counters::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 58, 102, 0.95);
+}
+.counter-stat {
+    text-align: center;
+    padding: 55px 0px 40px 0px;
+    position: relative;
+}
+.counter-stat span {
+    font-size: 70px;
+    color: var(--white-color);
+}
+.counter-stat p {
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Service Area  */
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.section-title-h4 {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.section-title-para {
+    color: var(--secondery-color);
+}
