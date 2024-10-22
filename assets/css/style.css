@@ -39,6 +39,7 @@ a {
     text-decoration: none;
     color: var(--gray-color);
     font-family: "Exo", sans-serif;
+    transition: .3s;
 }
 
 h1,
@@ -171,6 +172,7 @@ body.loaded #preloader {
     line-height: 72px;
     font-weight: 700;
     color: var(--primary-color);
+    text-transform: capitalize;
 }
 
 .banner-content p {
@@ -479,4 +481,115 @@ body.loaded #preloader {
 /* Support Area  */
 .support-area{
 background: var(--white-color);
+}
+
+/* Footer Area  */
+.border-bottom {
+    border-bottom: 1px solid var(--secondery-color);
+    padding: 40px 0;
+}
+.footer-para {
+    color: var(--secondery-color);
+    padding: 20px 0;
+}
+
+.footer-content a {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.footer-content a i {
+    background: var(--secondery-color);
+    color: var(--white-color);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.footer-list h4,
+.footer-contact h4 {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.footer-list ul li {
+    margin: 10px 0;
+}
+
+.footer-list ul li a {
+    display: inline-block;
+    color: var(--secondery-color);
+}
+.footer-list ul li a:hover {
+    color: var(--red-color);
+}
+.footer-icon {
+    color: var(--secondery-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 17px 0;
+}
+
+.footer-icon span {
+    margin-left: 11px;
+}
+
+
+.email-link a,
+.contact-link a {
+    display: inline-block;
+    color: var(--black-color);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.copyrights p {
+    color: var(--secondery-color);
+}
+
+.copyrights p a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black-color);
+    padding: 0 10px;
+    font-style: italic;
+}
+.copyrights input {
+    position: relative;
+    width: 100%;
+    padding: 15px 32px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    background: var(--white-color);
+    box-shadow: 7px 7px 17px var(--offwhaite);
+}
+
+.copyrights input:focus {
+    border: 1px solid var(--gray-color);
+}
+.subscribe-btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white-color);
+    background: var(--red-color);
+    padding: 9px 25px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 999;
+    margin-left: -137px;
+    margin-top: 5px;
+}
+.email-link a:hover,
+.contact-link a:hover,
+.copyrights p a:hover {
+    color: var(--red-color);
+}
+.subscribe-btn:hover{
+    background: var(--primary-color);
 }
