@@ -46,7 +46,7 @@
   <!-- /Header Top Area -->
 
   <!-- Header Area -->
-  <header class="header-area py-3">
+  <header class="header-area  py-3" id="header">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-12">
@@ -62,25 +62,40 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto text-center">
                 <li class="nav-item">
-                  <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">About</a>
+                  <a class="nav-link fw-semibold" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">Services</a>
+                  <a class="nav-link fw-semibold" href="services.html">Services</a>
+                </li>
+                <li class="nav-item has-menu">
+                  <a class="nav-link fw-semibold" href="department.html">Department</a>
+                  <ul>
+                    <li><a href="#">department</a></li>
+                    <li><a href="#">department single</a></li>
+                    <li><a href="#">sub menu</a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item has-menu">
+                  <a class="nav-link fw-semibold" href="doctor.html">Doctors</a>
+                  <ul>
+                    <li><a href="#">department</a></li>
+                    <li><a href="#">department single</a></li>
+                    <li><a href="#">sub menu</a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item has-menu">
+                  <a class="nav-link fw-semibold" href="blog.html">Blog</a>
+                  <ul>
+                    <li><a href="#">department</a></li>
+                    <li><a href="#">department single</a></li>
+                    <li><a href="#">sub menu</a> </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">Department</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">Doctors</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-semibold" href="#">Contact</a>
+                  <a class="nav-link fw-semibold" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -92,7 +107,7 @@
   <!-- /Header Area -->
 
   <!-- Banner area  -->
-  <section class="banner-area">
+  <section class="banner-area cover py-5" style="background-image: url('assets/img/slider-bg-1.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-7">
@@ -104,7 +119,7 @@
               maiores sunt
               fugit,deserunt rem suscipit placeat.</p>
             <div class="appoinment-btn">
-              <a href="#" class="btn">Make appoinment
+              <a href="contact.html" class="btn">Make appoinment
                 <i class="fa-solid fa-angle-right appoinment-icon"></i>
               </a>
             </div>
@@ -129,7 +144,7 @@
             <p class="feature-para">Get ALl time support for emergency.We have introduced the principle of family
               medicine.</p>
             <div class=" feature-btn">
-              <a href="#" class="btn">Make a appoinment
+              <a href="contact.html" class="btn">Make a appoinment
               </a>
             </div>
           </div>
@@ -186,7 +201,7 @@
               ipsum
               officia dolores repellat laudantium obcaecati neque.</p>
             <div class="appoinment-btn">
-              <a href="#" class="btn">service
+              <a href="services.html" class="btn">service
                 <i class="fa-solid fa-angle-right appoinment-icon"></i>
               </a>
             </div>
@@ -324,7 +339,7 @@
           <div class="single-service">
             <div class="service-item d-flex align-items-center">
               <div class="icon">
-                <img src="assets/img/icon/Gynecology.png" alt="">
+                <img src="assets/img/icon/Gynecology.png" alt="Gynecology">
               </div>
               <h4 class="heading">
                 Gynecology
@@ -362,7 +377,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control">
-                      <option>Choose Department <i class="fa-solid fa-angle-down"></i></option>
+                      <option>Choose Department</option>
                       <option>Software Design</option>
                       <option>Development cycle</option>
                       <option>Software Development</option>
@@ -376,7 +391,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control">
-                      <option>Select Doctors <i class="fa-solid fa-angle-down"></i></option>
+                      <option>Select Doctors </option>
                       <option>Software Design</option>
                       <option>Development cycle</option>
                       <option>Software Development</option>
@@ -415,7 +430,7 @@
                 <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
               </div>
               <div class="feature-btn">
-                <a class="btn " href="#">Make Appoinment <i class="fa-solid fa-angle-right ml-2  "></i></a>
+                <a class="btn " href="contact.html">Make Appoinment <i class="fa-solid fa-angle-right ml-2  "></i></a>
               </div>
 
             </form>
@@ -736,21 +751,8 @@
   </footer>
   <!-- Footer Area  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- /Scroll to Top Button -->
-  <a href="#" id="scrollToTop">⬆</a>
-
+  <div id="scrollToTop">⬆</div>
   <!-- /JQuery Library -->
   <script src="assets/js/jquery.min.js"></script>
   <!-- /Bootstrap JS -->

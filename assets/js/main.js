@@ -26,3 +26,19 @@ window.addEventListener("load", function () {
  });
  
 /*scroll bar*/
+
+/*stacky navbar*/
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.getElementById('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+      header.style.top = '0px';
+    } else {
+      header.classList.remove('scrolled');
+      header.style.top = '58px';
+    }
+  });
+});
+/*stacky navbar*/
