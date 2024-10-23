@@ -901,7 +901,7 @@ body.loaded #preloader {
 .blog-bg {
     background: var(--body-bg);
     padding: 28px;
-    width: 250px;
+    width: 100%;
     border-radius: 5px;
 }
 
