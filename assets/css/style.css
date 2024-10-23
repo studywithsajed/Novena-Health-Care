@@ -449,7 +449,7 @@ body.loaded #preloader {
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
-    color: var(--white-gary);
+    color: var(--secondery-color);
 }
 
 /* Contact Area   */
